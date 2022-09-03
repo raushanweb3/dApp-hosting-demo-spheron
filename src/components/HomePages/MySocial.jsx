@@ -4,7 +4,7 @@ import { BsTwitter, BsYoutube, BsLinkedin, BsGithub } from "react-icons/bs";
 const MySocial = () => {
   return (
     <div className="relative z-50">
-      <div className="text-gray-400 uppercase pb-2 text-center md:text-left">
+      <div className="text-gray-400 capitalize pb-2 text-center md:text-left">
         Follow Me:
       </div>
       <div className="flex justify-center md:justify-start gap-5 text-xl text-spheronCyan">
