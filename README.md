@@ -13,6 +13,8 @@ npm start
 
 ```
 
+Automatic Update Check
+
 ## Learn More
 
 Subscribe me on YouTube - [Web3 With Raushan](https://www.youtube.com/channel/UCMh1Fk_40eTljXX-SSrrccA)
