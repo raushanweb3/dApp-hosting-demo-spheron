@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import NavBar from "./components/HomePages/NavBar";
+import ErrorPage from "./ErrorPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <div
+        className="App h-screen w-screen flex flex-col justify-start md:justify-center md:p-10
+       bg-gradient-to-tr from-black to-spheronBlue"
+      >
+        <div className="">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </div>
+      </div>
+    </HashRouter>
   );
 }
 
